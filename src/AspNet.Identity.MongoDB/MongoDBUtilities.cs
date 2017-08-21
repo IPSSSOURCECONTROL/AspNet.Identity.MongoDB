@@ -10,16 +10,16 @@ namespace AspNet.Identity.MongoDB {
 
 		public static String GetRoleCollectionName() {
 			if (String.IsNullOrWhiteSpace(roleCollectionName)) {
-				roleCollectionName = MongoDBIdentitySettings.Settings != null ? MongoDBIdentitySettings.Settings.RoleCollectionName : "role";
+				roleCollectionName = MongoDBIdentitySettings.Settings != null ? MongoDBIdentitySettings.Settings.RoleCollectionName : "ApplicationRoles";
 			}
 			return roleCollectionName;
 		}
 
 		public static String GetUserCollectionName() {
 			if (String.IsNullOrWhiteSpace(userCollectionName)) {
-				userCollectionName = MongoDBIdentitySettings.Settings != null ? MongoDBIdentitySettings.Settings.UserCollectionName : "user";
+				userCollectionName = MongoDBIdentitySettings.Settings != null ? MongoDBIdentitySettings.Settings.UserCollectionName : "AspNetPrincipleUsers";
 			}
-			return userCollectionName;
+			return "AspNetPrincipleUsers";
 		}
 
 		public static IMongoDatabase GetDatabase(String connectionNameOrUrl) {

@@ -22,7 +22,7 @@ namespace AspNet.Identity.MongoDB {
 		//	set { this["frontPagePostCount"] = value; }
 		//}
 
-		[ConfigurationProperty(userCollectionName, IsRequired = true, DefaultValue = "user")]
+		[ConfigurationProperty(userCollectionName, IsRequired = true, DefaultValue = "AspNetPrincipleUsers")]
 		[RegexStringValidator("^[a-zA-Z]+$")]
 		public String UserCollectionName {
 			get {
@@ -33,7 +33,7 @@ namespace AspNet.Identity.MongoDB {
 			}
 		}
 
-		[ConfigurationProperty(roleCollectionName, IsRequired = true, DefaultValue = "role")]
+		[ConfigurationProperty(roleCollectionName, IsRequired = true, DefaultValue = "ApplicationRoles")]
 		[RegexStringValidator("^[a-zA-Z]+$")]
 		public String RoleCollectionName {
 			get {

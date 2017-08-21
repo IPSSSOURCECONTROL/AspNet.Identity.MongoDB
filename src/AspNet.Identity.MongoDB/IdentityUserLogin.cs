@@ -12,8 +12,8 @@ namespace AspNet.Identity.MongoDB {
 		public String ProviderKey { get; set; }
 
 		public static class FieldNames {
-			public const String LoginProvider = "p";
-			public const String ProviderKey = "k";
+			public const String LoginProvider = nameof(LoginProvider);
+		    public const String ProviderKey = nameof(ProviderKey);
 		}
 	}
 }

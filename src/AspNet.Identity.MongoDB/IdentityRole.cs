@@ -20,8 +20,8 @@ namespace AspNet.Identity.MongoDB {
 
 		public static class FieldNames {
 			public const String id = "_id";
-			public const String Name = "na";
-			public const String LowerCaseName = "ln";
+		    public const String Name = nameof(Name);
+		    public const String LowerCaseName = nameof(LowerCaseName);
 		}
 	}
 }

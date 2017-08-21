@@ -11,8 +11,8 @@ namespace AspNet.Identity.MongoDB.Test {
 			MongoUrl url = new MongoUrl(mongoUrl);
 			IMongoDatabase db = new MongoClient(url).GetDatabase(url.DatabaseName);
 
-			db.DropCollectionAsync("user");
-			db.DropCollectionAsync("role");
+			db.DropCollectionAsync("ApplicationUsers");
+			db.DropCollectionAsync("ApplicationRoles");
 		}
 
 		public static UserManager<IdentityUser> Initialize() {

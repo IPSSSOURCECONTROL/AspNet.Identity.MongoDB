@@ -11,9 +11,10 @@ namespace AspNet.Identity.MongoDB {
 		[BsonElement(FieldNames.Name)]
 		public String Name { get; set; }
 
-		public static class FieldNames {
-			public const String RoleId = "ri";
-			public const String Name = "n";
+		public static class FieldNames
+		{
+		    public const String RoleId = nameof(RoleId);
+		    public const String Name = nameof(Name);
 		}
 	}
 }

@@ -59,22 +59,22 @@ namespace AspNet.Identity.MongoDB {
 
 		public static class FieldNames {
 			public const String Id = "_id";
-			public const String UserName = "un";
-			public const String LowerCaseUserName = "lun";
-			public const String EmailAddress = "em";
-			public const String LowerCaseEmailAddress = "lem";
-			public const String EmailAddressConfirmed = "ec";
-			public const String PhoneNumber = "pn";
-			public const String PhoneNumberConfirmed = "pc";
-			public const String PasswordHash = "ph";
-			public const String SecurityStamp = "ss";
-			public const String LockoutEnabled = "lo";
-			public const String LockoutEndDateUtc = "le";
-			public const String AccessFailedCount = "af";
-			public const String TwoFactorEnabled = "tf";
-			public const String Logins = "li";
-			public const String Claims = "cl";
-			public const String Roles = "ro";
-		}
+			public const String UserName = nameof(UserName);
+			public const String LowerCaseUserName = nameof(LowerCaseUserName);
+            public const String EmailAddress = nameof(EmailAddress);
+            public const String LowerCaseEmailAddress = nameof(LowerCaseEmailAddress);
+            public const String EmailAddressConfirmed = nameof(EmailAddressConfirmed);
+            public const String PhoneNumber = nameof(PhoneNumber);
+            public const String PhoneNumberConfirmed = nameof(PhoneNumberConfirmed);
+            public const String PasswordHash = nameof(PasswordHash);
+            public const String SecurityStamp = nameof(SecurityStamp);
+            public const String LockoutEnabled = nameof(LockoutEnabled);
+            public const String LockoutEndDateUtc = nameof(LockoutEndDateUtc);
+            public const String AccessFailedCount = nameof(AccessFailedCount);
+            public const String TwoFactorEnabled = nameof(TwoFactorEnabled);
+            public const String Logins = nameof(Logins);
+            public const String Claims = nameof(Claims);
+            public const String Roles = nameof(Roles);
+        }
 	}
 }

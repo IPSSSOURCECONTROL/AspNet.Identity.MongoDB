@@ -10,8 +10,8 @@ namespace AspNet.Identity.MongoDB {
 		public String Type { get; set; }
 
 		public static class FieldNames {
-			public const String Value = "v";
-			public const String Type = "t";
+			public const String Value = nameof(IdentityUserClaim.Value);
+			public const String Type = nameof(IdentityUserClaim.Type);
 		}
 	}
 }
